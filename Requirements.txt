@@ -1,0 +1,17 @@
+Python : 3.8.10 (works well wrt all libraries below)
+Pycharm : Latest Version
+opencv-python :
+mediapipe :
+pycaw :
+autopy :
+pyautogui :
+ctypes :
+comtypes :
+screen_brightness_control :
+numpy :
+math :
+
+!!!!!!!!!!!!!Note: for the perfect sync of all libraries menctioned above wrt to python version which u need to use, u need to use the command below, inside the pycharm's terminal i.e.
+pip install <libraryname>
+
+!!!!!!!!!!!!!Also, Understand that "autopy" is a conflicting python library, which requires "python: 3.8. " only, but other than "autopy" remaining all the above libraries work well with "python : 3.10. ".
