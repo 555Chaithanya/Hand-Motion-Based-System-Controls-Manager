@@ -29,6 +29,7 @@ Brightness controller: gesture detection based on hand bounding box area
 Mouse: cursor locking, text selection
 
 Working of Implementation Block Diagram for our model:
+“Gestures are represented as a 5-finger binary pattern (1 = up, 0 = down) combined with hand side (‘Left’ or ‘Right’) to detect commands.”
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/9b3d7084-cde6-42be-8d9d-335170848f24)
@@ -42,19 +43,19 @@ Understanding of above block diagram involves mapping of specified 5-bit binary 
 
 Implementations:
 A.	Tabs Controller:
-A gesture sequence i.e. {Left, [01111]} -> {Left, [01001]} -> {Left, [01111]} will switch to the next tab.
+A gesture sequence i.e. {Left, [0,1,1,1,1]} -> {Left, [0,1,0,0,1]} -> {Left, [0,1,1,1,1]} will switch to the next tab.
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/8f65dbf3-ff10-4255-98be-488543711fba)
 
 
-A gesture sequence i.e. {Left, [01110]} -> {Left, [01001]} -> {Left, [01111]}  will close the current tab.
+A gesture sequence i.e. {Left, [0,1,1,1,0]} -> {Left, [0,1,0,0,1]} -> {Left, [0,1,1,1,1]}  will close the current tab.
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/e47122f7-3ae8-4d63-8b8f-a9a38ad0056e)
 
 
-A gesture sequence i.e. {Left, [01111]} -> {Left, [01001]} -> {Left, [01111]}  will minimize all the current tabs.
+A gesture sequence i.e. {Left, [0,1,1,1,1]} -> {Left, [0,1,0,0,1]} -> {Left, [0,1,1,1,1]}  will minimize all the current tabs.
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/ea6bb245-ba56-45fe-bcbd-a46516bb6091)
@@ -62,13 +63,13 @@ A gesture sequence i.e. {Left, [01111]} -> {Left, [01001]} -> {Left, [01111]}  w
 
 B.	Zoom in-out Controller:
 Controlling window or PDF file zoom in/out using hand gestures.
-Mapped gesture for zoom in-out for Window is {Left, [10001]},
+Mapped gesture for zoom in-out for Window is {Left, [1,0,0,0,1]},
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/6220735a-0a21-48cf-9829-2d1dffd4a421)
 
 
-while for pdf or document file zoom in-out is {Left, [01001]}.
+while for pdf or document file zoom in-out is {Left, [0,1,0,0,1]}.
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/29f88873-73e1-4eee-ad48-9c99f617d6df)
@@ -81,33 +82,33 @@ Elif area(current frame bounding box) > area(previous frame bounding box)
       then Perform zoom in.
 
 C.	Virtual mouse:  
-Gesture encoding for the cursor movement function i.e. {Right, [11100]}, 
-also for the text selection i.e. {Right, [11001]},
-Finally for , click& Double click functions i.e. {Right, [01000]} or {Right, [01100]} & for cursor locking function i.e. {Right, [11000]}:
+Gesture encoding for the cursor movement function i.e. {Right, [1,1,1,0,0]}, 
+also for the text selection i.e. {Right, [1,1,0,0,1]},
+Finally for , click& Double click functions i.e. {Right, [0,1,0,0,0]} or {Right, [0,1,1,0,0]} & for cursor locking function i.e. {Right, [1,1,0,0,0]}:
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/befa1933-ceda-49de-9775-b6c9ddb00bff)
 
 
-D.	Copy{Right,[01000]} & Paste{Right,[01100]} Controller:
+D.	Copy{Right,[0,1,0,0,0]} & Paste{Right,[0,1,1,0,0]} Controller:
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/d0ded4bd-43be-4adc-8fec-9d01612c7710)
 
 
-E.	Volume controller{Right,[11111]}:
+E.	Volume controller{Right,[1,1,1,1,1]}:
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/4e6526c7-3621-44d0-908a-43e122ace3b8)
 
 
-F.	Brightness controller{Left,[11001]}:
+F.	Brightness controller{Left,[1,1,0,0,1]}:
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/241e4d43-cfe2-4c1d-aba1-44dd298f93ea)
 
 
-G.  Scroll-Up{Left,[01100]}&Scroll- Down{Left,[01000]}:
+G.  Scroll-Up{Left,[0,1,1,0,0]}&Scroll- Down{Left,[0,1,0,0,0]}:
 
 
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/0c6fc2e4-d07e-440c-920a-255848afca65)
