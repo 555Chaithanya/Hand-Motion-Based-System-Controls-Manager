@@ -1,24 +1,32 @@
 # Hand-Motion-Based-System-Controls-Manager
-We are a team of two members, worked on our final year project.This Project offers an intuitive approach to managing a maximum number of system controls such as mouse functionalities like cursor movement, text selection with the cursor, cursor locking, volume and brightness control with set feature, and area-based detection, Zoom controls &amp; Tab Controls virtually using transition in hand Gestures.
-In this project, we have developed a System Controls Manager based on hand motion(called transition of gestures), utilizing hand gestures as input for system manipulation virtually. OpenCV and Media-Pipe modules form the basis of this implementation to interpret gestures. The system employs a webcam to record or capture images and videos, enabling control over various functions such as adjusting volume, brightness, mouse movements, clicks, scrolling, cursor locking for comfortable clicks, tab controls including tab switching, minimization, closing, as well as copying and pasting text through gestures, and zooming in and out for windows or PDF files. 
-To distinguish between the many gestures, we have utilised a 5-bit binary digit list-based approach which is generally used for finger up-down detection, facilitating the implementation of multiple gestures simultaneously. Through real-time gesture recognition, specific users can manipulate a computer using hand gestures in front of a camera linked to the system. This approach enables system control via hand gestures, reducing reliance on keyboard and mouse controls to some extent.
-Also there exist a lot of projects with individual features i.e.
-Modules	                                    Existing  features
-Volume controller	                          Controlling volume using Pinch gesture
-Brightness Controller	                      Controlling brightness using Pinch gesture
-Mouse	                                      Curser Movement, Right click, Left Click, Scroll-up & Scroll-down
 
-The newly proposed features include:
-Modules	                                    Proposed features
-Tabs controller	                            Tab Minimization, Tabs Swapping, Tab closing
-Zoom Controller	                            Window Zoom in-Zoom out, Document or Pdf Zoom in-Zoom out.
-Copy & Paste	                              Copying of images or text, Pasting of images or text.
+We are a team of two members and worked on our final year project. This project allows controlling system functions such as mouse functionalities (cursor movement, text selection, cursor locking), volume, brightness, zoom, and tab controls using hand gestures. OpenCV and MediaPipe modules are used to interpret gestures. The system employs a webcam to capture images and videos, enabling control over functions such as adjusting volume, brightness, mouse movements, clicks, scrolling, tab switching, minimization, closing, copying/pasting text, and zooming in/out for windows or PDF files. To distinguish gestures, we use a 5-bit binary digit list-based approach for finger up-down detection. Through real-time gesture recognition, users can manipulate a computer with hand gestures.
 
-The modifications added for existing features are:
-Modules	                                    Proposed features
-Volume controller	                          Addition of gesture detection based on hand’s bounding box area, Set volume based on pinky finger
-Brightness Controller	                      Addition of gesture detection based on hand’s bounding box area, Set brightness based on [11111] gesture
-Mouse	                                      Locking Curser , Text Selection.
+Modules and Features
+
+Existing Features
+
+Volume controller: controlling volume using pinch gesture
+
+Brightness controller: controlling brightness using pinch gesture
+
+Mouse: cursor movement, right click, left click, scroll-up & scroll-down
+
+Proposed Features
+
+Tabs controller: tab minimization, tab swapping, tab closing
+
+Zoom controller: window zoom in/out, document or PDF zoom in/out
+
+Copy & paste: copying and pasting images or text
+
+Modifications to Existing Features
+
+Volume controller: gesture detection based on hand bounding box area, set volume using pinky finger
+
+Brightness controller: gesture detection based on hand bounding box area
+
+Mouse: cursor locking, text selection
 
 Working of Implementation Block Diagram for our model:
 
