@@ -114,6 +114,9 @@ G.  Scroll-Up{Left,[0,1,1,0,0]}&Scroll- Down{Left,[0,1,0,0,0]}:
 ![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/0c6fc2e4-d07e-440c-920a-255848afca65)
 
 
+Future Scope: Integrating Natural Language Processing (NLP) via the Whisper module to create a multimodal command chain (Gesture Audio recording -> Another next gesture speech to Text and copied to  Clipboard. By paste gesture we have already we can paste text in editors without typing).
+
+
 You can see Demo of Implementation Below:
 _____________________________________________________________________________________
 https://drive.google.com/drive/folders/1EugLwEZTLKwi2D_IJF12hW_S9HHY05wF?usp=sharing
