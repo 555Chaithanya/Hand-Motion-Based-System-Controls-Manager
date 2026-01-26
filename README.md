@@ -32,7 +32,8 @@ Working of Implementation Block Diagram for our model:
 “Gestures are represented as a 5-finger binary pattern (1 = up, 0 = down) combined with hand side (‘Left’ or ‘Right’) to detect commands.”
 
 
-![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/9b3d7084-cde6-42be-8d9d-335170848f24)
+![gesture pipeline](https://github.com/user-attachments/assets/84c97f37-96c6-4ed8-9c16-6031f51e8ca6)
+
 
 
 Understanding of above block diagram involves mapping of specified 5-bit binary numbers with respect to each hand gesture i.e. 
