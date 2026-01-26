@@ -38,8 +38,9 @@ Working of Implementation Block Diagram for our model:
 
 Understanding of above block diagram involves mapping of specified 5-bit binary numbers with respect to each hand gesture i.e. 
 
+![finger mappings](https://github.com/user-attachments/assets/cf34a992-149c-49f7-a26a-9db7e39b16ac)
 
-![image](https://github.com/555Chaithanya/Hand-Motion-Based-System-Controls-Manager/assets/81861417/d1d90478-0006-4efc-b901-23172a7e778e)
+
 
 
 Implementations:
